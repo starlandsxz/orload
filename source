@@ -20,18 +20,27 @@ local OrionLib = {
             TextDark = Color3.fromRGB(150, 150, 150)
         },
         Sleek = {
-            Main = Color3.fromRGB(35, 35, 35),     -- Slightly darker gray
-            Second = Color3.fromRGB(45, 45, 45),   -- Dark gray
-            Stroke = Color3.fromRGB(75, 75, 75),   -- Medium gray
-            Divider = Color3.fromRGB(75, 75, 75),  -- Medium gray
-            Text = Color3.fromRGB(200, 200, 200),  -- Light gray
-            TextDark = Color3.fromRGB(120, 120, 120) -- Dark gray
+            Main = Color3.fromRGB(35, 35, 35),
+            Second = Color3.fromRGB(45, 45, 45),
+            Stroke = Color3.fromRGB(75, 75, 75),
+            Divider = Color3.fromRGB(75, 75, 75),
+            Text = Color3.fromRGB(200, 200, 200),
+            TextDark = Color3.fromRGB(120, 120, 120)
+        },
+        AMOLED = {
+            Main = Color3.fromRGB(0, 0, 0),       -- Pure black
+            Second = Color3.fromRGB(20, 20, 20),   -- Very dark gray
+            Stroke = Color3.fromRGB(50, 50, 50),   -- Dark gray
+            Divider = Color3.fromRGB(50, 50, 50),  -- Dark gray
+            Text = Color3.fromRGB(255, 255, 255),  -- White
+            TextDark = Color3.fromRGB(128, 128, 128) -- Gray
         }
     },
-    SelectedTheme = "Sleek",
+    SelectedTheme = "AMOLED",
     Folder = nil,
     SaveCfg = false
 }
+
 
 --Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
 local Icons = {}
