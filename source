@@ -19,42 +19,19 @@ local OrionLib = {
             Text = Color3.fromRGB(240, 240, 240),
             TextDark = Color3.fromRGB(150, 150, 150)
         },
-        Rainbow = {
-            Main = Color3.fromRGB(255, 0, 0),
-            Second = Color3.fromRGB(255, 127, 0),
-            Stroke = Color3.fromRGB(255, 255, 0),
-            Divider = Color3.fromRGB(0, 255, 0),
-            Text = Color3.fromRGB(0, 0, 255),
-            TextDark = Color3.fromRGB(139, 0, 255)
+        Sleek = {
+            Main = Color3.fromRGB(35, 35, 35),     -- Slightly darker gray
+            Second = Color3.fromRGB(45, 45, 45),   -- Dark gray
+            Stroke = Color3.fromRGB(75, 75, 75),   -- Medium gray
+            Divider = Color3.fromRGB(75, 75, 75),  -- Medium gray
+            Text = Color3.fromRGB(200, 200, 200),  -- Light gray
+            TextDark = Color3.fromRGB(120, 120, 120) -- Dark gray
         }
     },
-    SelectedTheme = "Rainbow",
+    SelectedTheme = "Sleek",
     Folder = nil,
     SaveCfg = false
 }
-
--- Function to cycle through rainbow colors
-local function cycleRainbowColor(speed)
-    local hue = 0
-    return function()
-        hue = (hue + speed) % 1
-        return Color3.fromHSV(hue, 1, 1)
-    end
-end
-
--- Apply rainbow theme dynamically
-local function applyRainbowTheme()
-    local getColor = cycleRainbowColor(0.001) -- Change the speed to your preference
-    OrionLib.Themes.Rainbow.Main = getColor()
-    OrionLib.Themes.Rainbow.Second = getColor()
-    OrionLib.Themes.Rainbow.Stroke = getColor()
-    OrionLib.Themes.Rainbow.Divider = getColor()
-    OrionLib.Themes.Rainbow.Text = getColor()
-    OrionLib.Themes.Rainbow.TextDark = getColor()
-end
-
--- Call this function periodically to update the theme
-game:GetService("RunService").RenderStepped:Connect(applyRainbowTheme)
 
 --Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
 local Icons = {}
