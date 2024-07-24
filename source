@@ -1,5 +1,3 @@
-
-
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -30,7 +28,7 @@ local OrionLib = {
             TextDark = Color3.fromRGB(139, 0, 255)
         }
     },
-    SelectedTheme = "Default",
+    SelectedTheme = "Rainbow",
     Folder = nil,
     SaveCfg = false
 }
